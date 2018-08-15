@@ -15,6 +15,8 @@ class App extends Component {
     });
   };
 
+  // this is the rendered function
+
 
   render() {
     return (
