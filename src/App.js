@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Input } from "./Input";
 
 class App extends Component {
   data = [{ firstName: "Mary", lastName: "Rose" }];
@@ -24,6 +25,7 @@ class App extends Component {
         { this.displayNames.forEach(name => {
           return <div>${name}</div>;
         })}
+        <Input></Input>
       </div>
     );
   }
