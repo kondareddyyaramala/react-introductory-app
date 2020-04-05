@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Input } from "./Input";
+import { UserDetails } from './UserDetails';
 
 class App extends Component {
   data = [{ firstName: "Mary", lastName: "Rose" }];
@@ -16,9 +17,6 @@ class App extends Component {
     });
   };
 
-  // this is the rendered function
-
-
   render() {
     return (
       <div className="App">
@@ -26,6 +24,7 @@ class App extends Component {
           return <div>${name}</div>;
         })}
         <Input></Input>
+        <UserDetails name="Konda Reddy"></UserDetails>
       </div>
     );
   }
